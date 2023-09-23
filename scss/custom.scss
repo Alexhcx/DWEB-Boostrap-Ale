@@ -1,0 +1,137 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+//@import url('fonts/nasalization-rg.otf') format('otf');
+
+@font-face {
+  font-family: nasa;
+  src: url(/fonts/nasalization-rg.otf) format('openType');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    height: auto !important;
+    min-height: 100vh;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-container-cadastro {
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 25vw;
+  margin-top: 10vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.flex-container-conteudo{
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+#message{
+  font-family: nasa !important;
+}
+
+#navigation_bar{
+  display: flex;
+  align-items: right;
+  justify-content: center;
+}
+
+#bg-stars{
+  background-color: #000;
+  background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13), transparent), 
+  radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent);
+}
+
+canvas {
+  position:fixed;
+  width: 100vw;
+  z-index: -1;
+}
+
+.font-Title{
+    color: whitesmoke !important;
+    font-family: nasa;
+    height: 4.3vh;
+    font-size: 1.9vh;
+    text-align: center;  
+}
+
+.font-Title:hover{
+    color: rgb(12, 140, 245) !important;
+}
+
+.title-body{
+  color: whitesmoke !important;
+  font-family: nasa;
+}
+
+.font-cadastro{
+  color: whitesmoke !important;
+  font-family: nasa;
+  height: 4.3vh;
+  font-size: 1.9vh;
+  text-align: left;  
+}
+
+.button-bg{
+  background-color: rgb(12, 140, 245);
+}
+
+#mainText {
+  text-align: center;
+  font-size: 5vh;
+  margin-top: 12vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+#secondaryText {
+  text-align: center;
+  font-size: 2vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.text-Animation-align{
+  text-align: center;
+}  
+
+.blinking-cursor {
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+  }
+
+@keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+
+

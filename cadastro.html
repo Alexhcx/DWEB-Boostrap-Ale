@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="galaxy.ico">
+    <title>Cadastro</title>
+    <link href="custom.css" rel="stylesheet">
+</head>
+<body id="bg-stars">
+
+    <canvas>
+        <script src="bg-space.js"></script>
+    </canvas>
+
+    <nav class="navbar navbar-expand-lg bg-black bg-gradient">
+        <div class="container">
+          <a class="navbar-brand font-Title"href="index.html">
+            <img src = "galaxy.ico" style="height: 30px; margin-bottom: 4px;"/>
+            To The Stars
+          </a>
+          <button class="navbar-toggler button-bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active font-Title" id="navigation_bar" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link font-Title" href="cadastro.html" >Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="flex-container-cadastro">
+      <form>
+        <div class="row mb-3">
+          <label for="nomeInput" class="col-sm-2 col-form-label font-cadastro">Nome</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="nomeInput">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="emailInput" class="col-sm-2 col-form-label font-cadastro">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="emailInput">
+            </div>
+          </div>
+        <div class="row mb-3">
+          <label for="senha" class="col-sm-2 col-form-label font-cadastro">Senha</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="senha">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="confirmarSenha" class="col-sm-2 col-form-label font-cadastro">Repita a senha</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="confirmarSenha">
+            </div>
+          </div>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label font-cadastro" for="gridCheck1">
+                Concordo com os termos de uso.
+              </label>
+            </div>
+          </div>
+        </div>
+        <p id="message"></p>
+        <!--<button type="submit" onclick="checkPassword()" class="btn btn-primary font-cadastro bg-black bg-gradient" style="border-color: azure;">Concluir cadastro</button>-->
+        <input type="button" class="bg-black bg-gradient font-cadastro" onclick="checkPassword()" value="Confirmar Cadastro"/>
+      </form>
+    </div>
+
+    <script src="valid-password.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+</body>
+</html>

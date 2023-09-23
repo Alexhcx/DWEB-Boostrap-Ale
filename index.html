@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="galaxy.ico">
+    <title>To the stars</title>
+    <link href="custom.css" rel="stylesheet">
+
+</head>
+<body id="bg-stars">
+  
+  <nav class="navbar navbar-expand-lg bg-black bg-gradient ">
+      <div class="container">
+        <a class="navbar-brand font-Title"href="index.html">
+          <img src = "galaxy.ico" style="height: 30px; margin-bottom: 4px;"/>
+          To The Stars
+        </a>
+        <button class="navbar-toggler button-bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active font-Title" id="navigation_bar" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link font-Title" href="cadastro.html" >Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <canvas>
+      <script src="bg-space.js"></script>
+    </canvas>
+
+  <div id="mainText">
+    <span is="type-async" id="type-text" class="title-body">...</span>
+    <span class="blinking-cursor title-body">.</span>
+    <script src="animation.js"></script>
+  </div>
+
+  <div id="secondaryText" class="title-body">O maior site de informações sobre jogos e filmes no espaço</div>
+
+  <div class="flex-container">
+    <div>
+      <img src="images/DTtx-min.gif" alt="Interstellar" class="img-fluid" style="margin-top: 25px; width: 570px; height: 243.5px;">
+    </div>
+    <div>
+      <img src="images/Starfield-min.gif" alt="Starfield" class="img-fluid" style="margin-top: 25px; width: 570px; height: 243.5px;">
+    </div>
+    <div>
+      <img src="images/alienres.gif" alt="Starfield" class="img-fluid" style="margin-top: 25px; width: 570px; height: 243.5px;">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
